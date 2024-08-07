@@ -5,10 +5,10 @@ import asyncpg
 
 
 DATABASE_CONFIG = {
-    'host': '79.174.91.110',
-    'database': 'umami',
-    'user': 'postgres',
-    'password': 's4kUp3Nc1rCl3s&',
+    'host': '',
+    'database': '',
+    'user': '',
+    'password': '',
     'port': '5432'
 }
 
@@ -57,7 +57,7 @@ class UserState(StatesGroup):
     payment = State()
 
 
-payment_token = '381764678:TEST:86954'
+payment_token = ''
 
-bot = Bot(token='7099740954:AAFAAD4SX1RAYP6yVn_DMsuHIN7-TSMzLmE')
+bot = Bot(token='')
 dp = Dispatcher(bot, storage=storage)
